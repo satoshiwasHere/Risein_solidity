@@ -3,7 +3,7 @@ pragma solidity ^0.8.18;
 
 contract ProposalContract {
 
-	struct proposal {
+	struct Proposal {
 		string title; // title for the proposal 
 		string description;
 		uint256 approve;
@@ -16,5 +16,5 @@ contract ProposalContract {
 	
 	// Recording previous proposal, indexing with a uint256 key value
 
-	mapping(uint256 => proposal) proposal_history; 
+	mapping(uint256 => Proposal) proposal_history; 
 }
